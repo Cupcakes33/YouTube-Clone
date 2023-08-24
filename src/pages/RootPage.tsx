@@ -1,11 +1,12 @@
-import React from "react";
+
 import { Outlet } from "react-router-dom";
+import Layout from "../components/Layout";
 
 export default function RootPage() {
   return (
-    <>
-      <div>RootPage</div>
+    <Layout>
+      <div>123</div>
       <Outlet />
-    </>
+    </Layout>
   );
 }

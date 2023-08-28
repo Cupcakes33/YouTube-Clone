@@ -17,7 +17,7 @@ type Snippet = {
   publishTime: string;
 };
 
-type Item = {
+export type VideoItem = {
   kind: string;
   etag: string;
   id: {
@@ -36,5 +36,5 @@ export type YoutubeList = {
     totalResults: number;
     resultsPerPage: number;
   };
-  items: Item[];
+  items: VideoItem[];
 };

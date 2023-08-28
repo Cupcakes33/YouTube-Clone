@@ -1,0 +1,534 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "trgiy5-OXN9eWjJDbAJPQ5qYJL4",
+  "items": [
+      {
+          "kind": "youtube#video",
+          "etag": "mZ5gZ72D-iWj469XvTf9Pb37IPQ",
+          "id": "G1FtMlFcOJY",
+          "snippet": {
+              "publishedAt": "2023-08-27T07:00:07Z",
+              "channelId": "UCnU6-_6wYsGnrtysD-VdkGA",
+              "title": "잘못된 밤샘 파티",
+              "description": "비즈니스 문의 : shorts0160@gmail.com",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/G1FtMlFcOJY/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/G1FtMlFcOJY/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/G1FtMlFcOJY/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/G1FtMlFcOJY/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/G1FtMlFcOJY/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "숏플루언서",
+              "tags": [
+                  "쇼츠",
+                  "shorts"
+              ],
+              "categoryId": "1",
+              "liveBroadcastContent": "none",
+              "localized": {
+                  "title": "잘못된 밤샘 파티",
+                  "description": "비즈니스 문의 : shorts0160@gmail.com"
+              }
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "QabkZsg4hdUgktw_xT91z0MTPZw",
+          "id": "rYxA5maTKU8",
+          "snippet": {
+              "publishedAt": "2023-08-25T04:46:36Z",
+              "channelId": "UCnQRkIhRmXrxGrK4-8n-lVw",
+              "title": "이종교배 성공한 희귀동물들.jpg",
+              "description": "이종교배 성공한 희귀동물들.jpg\n\nShorts\n쇼츠\n\n구독하기, 좋아요 한번씩 눌러주시면 너무 감사하겠습니다 ㅎ_ㅎ\n▶ https://goo.gl/c21mgR ◀구독하기!\n\n똘킹 유튜브 채널입니다 \n리그 오브 레전드, 각종 콘솔 비디오게임, 하이라이트 등등 재밌는 영상이 업로드됩니다\n\n똘킹의 전용 홈페이지, 똘킹왕국!! 많은 가입 부탁드려요~\n▶https://cafe.naver.com/ddolking555\n\n트위치에서 스트리밍 중입니다!\n▶https://www.twitch.tv/ddolking555\n\n궁금하신점이나 문의메일은 여기로 보내주세요 \n▶ddolking555@naver.com \n\n똘킹 인스타그램, 사생활을 보고싶다! \n▶https://www.instagram.com/ddolking555/\n\n생방송 시간은평일 저녁 9시, 주말은 랜덤입니다\n\n#shorts #쇼츠 #동물",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/rYxA5maTKU8/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/rYxA5maTKU8/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/rYxA5maTKU8/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/rYxA5maTKU8/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/rYxA5maTKU8/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "똘킹",
+              "tags": [
+                  "리그오브레전드",
+                  "LOL",
+                  "똘킹",
+                  "똘킹생방송",
+                  "똘킹트위치",
+                  "ddolking555",
+                  "게임",
+                  "해도리",
+                  "롤 패치",
+                  "PBE",
+                  "보겸",
+                  "랄로",
+                  "괴물쥐",
+                  "백크",
+                  "파카",
+                  "Short",
+                  "저라뎃",
+                  "페이커",
+                  "롤드컵",
+                  "챌린저",
+                  "롤 프로",
+                  "롤 대회",
+                  "서폿",
+                  "서포터",
+                  "Shorts",
+                  "쇼츠",
+                  "이상형월드컵",
+                  "이상형 월드컵",
+                  "무지개맛",
+                  "병병병",
+                  "팍플레이",
+                  "아케인",
+                  "롤 아케인",
+                  "넷플릭스 아케인",
+                  "롤토체스",
+                  "TFT",
+                  "룬테라",
+                  "우주하마",
+                  "수탉",
+                  "너덜트",
+                  "웃긴영상",
+                  "피식대학"
+              ],
+              "categoryId": "26",
+              "liveBroadcastContent": "none",
+              "defaultLanguage": "ko",
+              "localized": {
+                  "title": "이종교배 성공한 희귀동물들.jpg",
+                  "description": "이종교배 성공한 희귀동물들.jpg\n\nShorts\n쇼츠\n\n구독하기, 좋아요 한번씩 눌러주시면 너무 감사하겠습니다 ㅎ_ㅎ\n▶ https://goo.gl/c21mgR ◀구독하기!\n\n똘킹 유튜브 채널입니다 \n리그 오브 레전드, 각종 콘솔 비디오게임, 하이라이트 등등 재밌는 영상이 업로드됩니다\n\n똘킹의 전용 홈페이지, 똘킹왕국!! 많은 가입 부탁드려요~\n▶https://cafe.naver.com/ddolking555\n\n트위치에서 스트리밍 중입니다!\n▶https://www.twitch.tv/ddolking555\n\n궁금하신점이나 문의메일은 여기로 보내주세요 \n▶ddolking555@naver.com \n\n똘킹 인스타그램, 사생활을 보고싶다! \n▶https://www.instagram.com/ddolking555/\n\n생방송 시간은평일 저녁 9시, 주말은 랜덤입니다\n\n#shorts #쇼츠 #동물"
+              },
+              "defaultAudioLanguage": "ko"
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "AYZyDLRY8iZQmJ1WN255_C0aSdA",
+          "id": "nt4X5GBuCW8",
+          "snippet": {
+              "publishedAt": "2023-08-25T06:56:37Z",
+              "channelId": "UCMtibDNesdl91OdUhfyXB6Q",
+              "title": "고양이인줄 알고 구해와서 키운 녀석의 정체",
+              "description": "#shorts #고양이 #구조 #동물구조 #반려묘 #동물 #animals #동물이야기 #동물스토리 #감동 #눈물 #흑표범 #표범 #fyp #foryourpage \n\n🎵Music provided by 브금대통령\n🎵Track : Farewell 2021 -  • [Royalty Free Music] Farewell 2021 (E...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/nt4X5GBuCW8/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/nt4X5GBuCW8/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/nt4X5GBuCW8/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/nt4X5GBuCW8/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/nt4X5GBuCW8/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "StoryTube : 스토리튜브",
+              "categoryId": "15",
+              "liveBroadcastContent": "none",
+              "localized": {
+                  "title": "고양이인줄 알고 구해와서 키운 녀석의 정체",
+                  "description": "#shorts #고양이 #구조 #동물구조 #반려묘 #동물 #animals #동물이야기 #동물스토리 #감동 #눈물 #흑표범 #표범 #fyp #foryourpage \n\n🎵Music provided by 브금대통령\n🎵Track : Farewell 2021 -  • [Royalty Free Music] Farewell 2021 (E..."
+              },
+              "defaultAudioLanguage": "ko"
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "M4hVzlTzUu5AMT1f-QjYOVi5vaU",
+          "id": "QnLrQsfSvzY",
+          "snippet": {
+              "publishedAt": "2023-08-27T03:09:15Z",
+              "channelId": "UCETtE0PwVfEr0pGq3J-4xig",
+              "title": "말의 발톱을 자르지 않으면 벌어지는 일#shorts",
+              "description": "#animals #animalsshorts #horse #말 #발톱 #장제사 #동물 #네일",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/QnLrQsfSvzY/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/QnLrQsfSvzY/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/QnLrQsfSvzY/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/QnLrQsfSvzY/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/QnLrQsfSvzY/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "논란이슈",
+              "categoryId": "24",
+              "liveBroadcastContent": "none",
+              "localized": {
+                  "title": "말의 발톱을 자르지 않으면 벌어지는 일#shorts",
+                  "description": "#animals #animalsshorts #horse #말 #발톱 #장제사 #동물 #네일"
+              }
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "rnQFnSDyJyubIreXqVGH3qpPD5g",
+          "id": "A3nQUeWgdrQ",
+          "snippet": {
+              "publishedAt": "2023-08-23T13:00:13Z",
+              "channelId": "UCC3tMVyct58LpmmwH2ydDuw",
+              "title": "참지 않는 치와와",
+              "description": "",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/A3nQUeWgdrQ/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/A3nQUeWgdrQ/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/A3nQUeWgdrQ/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/A3nQUeWgdrQ/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/A3nQUeWgdrQ/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "경주최씨 충렬공파 39대손",
+              "categoryId": "22",
+              "liveBroadcastContent": "none",
+              "localized": {
+                  "title": "참지 않는 치와와",
+                  "description": ""
+              }
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "IjamaifIvc9lrTtBg8vYaXeKINk",
+          "id": "73x99XeCwuE",
+          "snippet": {
+              "publishedAt": "2023-08-26T10:00:03Z",
+              "channelId": "UCuGERuIwP-Zz_Fti6GfLb1A",
+              "title": "악어가 새끼 멧돼지를 잡아먹으려고하자.. 어미의 반응은",
+              "description": "#shorts #crocodile #boar #wildanimals #동물 #animal",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/73x99XeCwuE/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/73x99XeCwuE/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/73x99XeCwuE/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/73x99XeCwuE/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/73x99XeCwuE/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "동물입장권",
+              "tags": [
+                  "shorts",
+                  "crocodile",
+                  "boar",
+                  "wildanimals",
+                  "동물",
+                  "animal"
+              ],
+              "categoryId": "15",
+              "liveBroadcastContent": "none",
+              "defaultLanguage": "ko",
+              "localized": {
+                  "title": "악어가 새끼 멧돼지를 잡아먹으려고하자.. 어미의 반응은",
+                  "description": "#shorts #crocodile #boar #wildanimals #동물 #animal"
+              },
+              "defaultAudioLanguage": "ko"
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "TKIf5O9n7tVmGRLf9562uABFCIU",
+          "id": "gOliUSgox60",
+          "snippet": {
+              "publishedAt": "2023-08-27T11:00:24Z",
+              "channelId": "UCsZsapIQlTbQ7mX6489elMA",
+              "title": "아빠 사자의 장난에 깜짝 놀란 아기 사자",
+              "description": "아빠 사자의 장난에 깜짝 놀란 아기 사자",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/gOliUSgox60/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/gOliUSgox60/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/gOliUSgox60/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/gOliUSgox60/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/gOliUSgox60/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "애니멀 라이크 Animal Like",
+              "tags": [
+                  "야생동물",
+                  "동물이야기",
+                  "동물",
+                  "동물스토리",
+                  "animal"
+              ],
+              "categoryId": "15",
+              "liveBroadcastContent": "none",
+              "defaultLanguage": "ko",
+              "localized": {
+                  "title": "아빠 사자의 장난에 깜짝 놀란 아기 사자",
+                  "description": "아빠 사자의 장난에 깜짝 놀란 아기 사자"
+              },
+              "defaultAudioLanguage": "ko"
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "4SmVUgIdUc24j7hKvwdUHQAzx0w",
+          "id": "Dsxj_IUJFWc",
+          "snippet": {
+              "publishedAt": "2023-08-25T12:34:09Z",
+              "channelId": "UCr4CatqympoNVEzGirUSgfg",
+              "title": "맛없는 음식을 고르자.. 개의 놀라운 행동",
+              "description": "#shorts #강아지 #댕댕이",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/Dsxj_IUJFWc/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/Dsxj_IUJFWc/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/Dsxj_IUJFWc/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/Dsxj_IUJFWc/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/Dsxj_IUJFWc/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "톡톡 동물 지식",
+              "categoryId": "15",
+              "liveBroadcastContent": "none",
+              "defaultLanguage": "ko",
+              "localized": {
+                  "title": "맛없는 음식을 고르자.. 개의 놀라운 행동",
+                  "description": "#shorts #강아지 #댕댕이"
+              },
+              "defaultAudioLanguage": "ko"
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "Ha-TByQ5xD2VmRoEPgWk_WzYAO0",
+          "id": "IAJCuqqpp9U",
+          "snippet": {
+              "publishedAt": "2023-08-11T12:44:21Z",
+              "channelId": "UClExf-ScXuEUvskktEOz0dA",
+              "title": "사슴 몸에 붙은 이상한 것의 정체는?",
+              "description": "사슴 몸에 붙은 버섯 같은 종양은 무엇일까요?\n\n#shorts",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/IAJCuqqpp9U/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/IAJCuqqpp9U/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/IAJCuqqpp9U/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/IAJCuqqpp9U/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/IAJCuqqpp9U/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "동물돋보기",
+              "categoryId": "15",
+              "liveBroadcastContent": "none",
+              "localized": {
+                  "title": "사슴 몸에 붙은 이상한 것의 정체는?",
+                  "description": "사슴 몸에 붙은 버섯 같은 종양은 무엇일까요?\n\n#shorts"
+              }
+          }
+      },
+      {
+          "kind": "youtube#video",
+          "etag": "G75u4FkZi8l5Fa6C24gcVLt7D_4",
+          "id": "e0pz7dq4ZVE",
+          "snippet": {
+              "publishedAt": "2023-08-12T15:37:11Z",
+              "channelId": "UCO7IFuveD9R4APey8RVDRuQ",
+              "title": "모두가 놀란 고양이의 싸움 실력",
+              "description": "주인님 앞으로도 잘 부탁 드려요",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/e0pz7dq4ZVE/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/e0pz7dq4ZVE/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/e0pz7dq4ZVE/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  },
+                  "standard": {
+                      "url": "https://i.ytimg.com/vi/e0pz7dq4ZVE/sddefault.jpg",
+                      "width": 640,
+                      "height": 480
+                  },
+                  "maxres": {
+                      "url": "https://i.ytimg.com/vi/e0pz7dq4ZVE/maxresdefault.jpg",
+                      "width": 1280,
+                      "height": 720
+                  }
+              },
+              "channelTitle": "이바바",
+              "categoryId": "23",
+              "liveBroadcastContent": "none",
+              "localized": {
+                  "title": "모두가 놀란 고양이의 싸움 실력",
+                  "description": "주인님 앞으로도 잘 부탁 드려요"
+              },
+              "defaultAudioLanguage": "zxx"
+          }
+      }
+  ],
+  "nextPageToken": "CAoQAA",
+  "pageInfo": {
+      "totalResults": 189,
+      "resultsPerPage": 10
+  }
+}

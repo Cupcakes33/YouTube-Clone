@@ -1,11 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { VideoItem } from "../types/youtube";
-
-const decodeHTMLEntities = (text: string) => {
-  const textArea = document.createElement("textarea");
-  textArea.innerHTML = text;
-  return textArea.value;
-};
+import htmlParser from "../utils/htmlParser";
 
 export default function HomePage() {
   const {
@@ -25,9 +20,8 @@ export default function HomePage() {
       {initVideosData
         ? initVideosData.map((video: VideoItem) => (
             <div key={video.id.videoId}>
-              <p>{decodeHTMLEntities(video.snippet.title)}</p>
+              <p>{htmlParser(video.snippet.title)}</p>
               <img src={video.snippet.thumbnails.medium.url} />
-              <div>{video.snippet.title}</div>
             </div>
           ))
         : null}

@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import { getPopularVideos } from "../api/axios";
 import VideoItem from "../components/VideoItem";
 import { useState } from "react";
@@ -8,14 +8,17 @@ const CATEGORYS = ["0", "10", "15", "17", "20"];
 export default function HomePage() {
   const [category, setCategory] = useState("0");
   const {
-    data: initVideosData,
+    data: { items, nextPageToken } = {},
     isLoading,
     isError,
-  } = useQuery(["videos", category], () => getPopularVideos(category), {
-    staleTime: 1000 * 60 * 10,
-  });
+  } = useQuery(
+    ["videos", category],
+    () => getPopularVideos({ categoryId: category }),
+    {
+      staleTime: 1000 * 60 * 10,
+    }
+  );
 
-  console.log(initVideosData);
   return (
     <>
       {isLoading && <div>Loading...</div>}
@@ -28,10 +31,8 @@ export default function HomePage() {
           {category}
         </button>
       ))}
-      {initVideosData
-        ? initVideosData.map((video: any) => (
-            <VideoItem key={video.id} video={video} />
-          ))
+      {items
+        ? items.map((video: any) => <VideoItem key={video.id} video={video} />)
         : null}
     </>
   );

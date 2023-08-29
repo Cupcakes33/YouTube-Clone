@@ -22,11 +22,13 @@ export const fetchPopularVideos = async (
     pageToken,
     ...(categoryId && { videoCategoryId: categoryId }),
   };
-  const response = await instance.get("/videos", { params });
-  return response.data.items;
-};
 
-// 서비스에서 제공하는 카테고리는 4가지 밖에 없으므로 categoryId 의 type 을 제한해야 할 지 고민해보기.
+  const response = await instance.get("/videos", { params });
+  return {
+    videos: response.data.items,
+    nextPageToken: response.data.nextPageToken,
+  };
+};
 
 export const fetchChannelInfo = async (channelIds: string[]) => {
   const params = {
@@ -38,15 +40,21 @@ export const fetchChannelInfo = async (channelIds: string[]) => {
   return response.data.items;
 };
 
-export const getPopularVideos = async (
-  pageToken?: string,
-  categoryId?: string
-) => {
-  const videos = await fetchPopularVideos(pageToken, categoryId);
+export const getPopularVideos = async ({
+  pageToken,
+  categoryId,
+}: {
+  pageToken?: string;
+  categoryId?: string;
+}) => {
+  const { videos, nextPageToken } = await fetchPopularVideos(
+    pageToken,
+    categoryId
+  );
   const channelIds = videos.map((video: any) => video.snippet.channelId);
   const channels = await fetchChannelInfo(channelIds);
 
-  return videos.map((video) => {
+  const items = videos.map((video) => {
     const channelInfo = channels.find(
       (channel) => channel.id === video.snippet.channelId
     );
@@ -61,4 +69,8 @@ export const getPopularVideos = async (
       publisherProfileImg: channelInfo.snippet.thumbnails.default.url,
     };
   });
+
+  return { items, nextPageToken: nextPageToken };
 };
+
+// 어떻게 하면 nextPageToken 을 전달할 수 있을지 고민해보기.

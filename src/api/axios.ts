@@ -1,55 +1,64 @@
 import axios from "axios";
 
-// 2 - Autos & Vehicles
-// 1 -  Film & Animation
 // 10 - Music
 // 15 - Pets & Animals
 // 17 - Sports
-// 18 - Short Movies
-// 19 - Travel & Events
 // 20 - Gaming
-// 21 - Videoblogging
-// 22 - People & Blogs
-// 23 - Comedy
-// 24 - Entertainment
-// 25 - News & Politics
-// 26 - Howto & Style
-// 27 - Education
-// 28 - Science & Technology
-// 29 - Nonprofits & Activism
-// 30 - Movies
-// 31 - Anime/Animation
-// 32 - Action/Adventure
-// 33 - Classics
-// 34 - Comedy
-// 35 - Documentary
-// 36 - Drama
-// 37 - Family
-// 38 - Foreign
-// 39 - Horror
-// 40 - Sci-Fi/Fantasy
-// 41 - Thriller
-// 42 - Shorts
-// 43 - Shows
-// 44 - Trailers
 
 const instance = axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
+  params: { key: import.meta.env.VITE_YOUTUBE_API_KEY },
 });
 
-export const getVideos = async (pageToken: string = "") => {
-  // const params = {
-  //   part: "snippet",
-  //   chart: "mostPopular",
-  //   regionCode: "KR",
-  //   maxResults: 30,
-  //   pageToken,
-  //   key: import.meta.env.VITE_YOUTUBE_API_KEY,
-  // };
-  // const response = await instance.get("/videos", { params });
-  // return response.data.items;
+export const fetchPopularVideos = async (
+  categoryId?: string,
+  pageToken?: string
+) => {
+  const params = {
+    part: "snippet, contentDetails, statistics",
+    chart: "mostPopular",
+    regionCode: "KR",
+    maxResults: 10,
+    pageToken,
+    ...(categoryId && { videoCategoryId: categoryId }),
+  };
+  const response = await instance.get("/videos", { params });
+  return response.data.items;
+};
 
-  return fetch(`/mock/getVideos.json`).then((res) =>
-    res.json().then((data) => data.items)
-  );
+// 서비스에서 제공하는 카테고리는 4가지 밖에 없으므로 categoryId 의 type 을 제한해야 할 지 고민해보기.
+
+export const fetchChannelInfo = async (channelIds: string[]) => {
+  const params = {
+    part: "snippet",
+    id: channelIds.join(","),
+  };
+
+  const response = await instance.get("/channels", { params });
+  return response.data.items;
+};
+
+export const getPopularVideos = async (
+  pageToken?: string,
+  categoryId?: string
+) => {
+  const videos = await fetchPopularVideos(pageToken, categoryId);
+  const channelIds = videos.map((video: any) => video.snippet.channelId);
+  const channels = await fetchChannelInfo(channelIds);
+
+  return videos.map((video) => {
+    const channelInfo = channels.find(
+      (channel) => channel.id === video.snippet.channelId
+    );
+    return {
+      id: video.id,
+      title: video.snippet.title,
+      duration: video.contentDetails.duration,
+      thumbnail: video.snippet.thumbnails.medium.url,
+      publishedAt: video.snippet.publishedAt,
+      viewCount: video.statistics.viewCount,
+      publisher: channelInfo.snippet.title,
+      publisherProfileImg: channelInfo.snippet.thumbnails.default.url,
+    };
+  });
 };

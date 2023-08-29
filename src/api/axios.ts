@@ -33,20 +33,23 @@ import axios from "axios";
 // 43 - Shows
 // 44 - Trailers
 
-
 const instance = axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
 });
 
 export const getVideos = async (pageToken: string = "") => {
-  const params = {
-    part: "snippet",
-    chart: "mostPopular",
-    regionCode: "KR",
-    maxResults: 30,
-    pageToken,
-    key: import.meta.env.VITE_YOUTUBE_API_KEY,
-  };
-  const response = await instance.get("/videos", { params });
-  return response.data.items;
+  // const params = {
+  //   part: "snippet",
+  //   chart: "mostPopular",
+  //   regionCode: "KR",
+  //   maxResults: 30,
+  //   pageToken,
+  //   key: import.meta.env.VITE_YOUTUBE_API_KEY,
+  // };
+  // const response = await instance.get("/videos", { params });
+  // return response.data.items;
+
+  return fetch(`/mock/getVideos.json`).then((res) =>
+    res.json().then((data) => data.items)
+  );
 };

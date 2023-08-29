@@ -1,23 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
 import { VideoItem } from "../types/youtube";
 import htmlParser from "../utils/htmlParser";
+import { getVideos } from "../api/axios";
 
 export default function HomePage() {
   const {
     data: initVideosData,
     isLoading,
     isError,
-  } = useQuery(["videos"], async () => {
-    return fetch(`/mock/youtube_list.json`).then((res) =>
-      res.json().then((data) => data.items)
-    );
-  });
-
-  // const {
-  //   data: initVideosData,
-  //   isLoading,
-  //   isError,
-  // } = useQuery(["videos"], () => getVideos());
+  } = useQuery(["videos"], () => getVideos());
 
   return (
     <>

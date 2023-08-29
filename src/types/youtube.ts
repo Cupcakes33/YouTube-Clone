@@ -4,7 +4,10 @@ type Thumbnail = {
   height: number;
 };
 
-type Thumbnails = Record<"default" | "medium" | "high", Thumbnail>;
+type Thumbnails = Record<"default" | "medium" | "high", Thumbnail> & {
+  standard?: Thumbnail;
+  maxres?: Thumbnail;
+};
 
 type Snippet = {
   publishedAt: string;
@@ -20,10 +23,7 @@ type Snippet = {
 export type VideoItem = {
   kind: string;
   etag: string;
-  id: {
-    kind: string;
-    videoId: string;
-  };
+  id: string;
   snippet: Snippet;
 };
 

@@ -25,6 +25,7 @@ export default function HomePage() {
       {isError && <div>Error...</div>}
       {CATEGORYS.map((category) => (
         <button
+          key={category}
           className="p-2 border mr-2"
           onClick={() => setCategory(category)}
         >

@@ -10,10 +10,13 @@ const instance = axios.create({
   params: { key: import.meta.env.VITE_YOUTUBE_API_KEY },
 });
 
-export const fetchPopularVideos = async (
-  categoryId?: string,
-  pageToken?: string
-) => {
+export const fetchPopularVideos = async ({
+  categoryId,
+  pageToken,
+}: {
+  categoryId?: string;
+  pageToken?: string;
+}) => {
   const params = {
     part: "snippet, contentDetails, statistics",
     chart: "mostPopular",
@@ -47,10 +50,10 @@ export const getPopularVideos = async ({
   pageToken?: string;
   categoryId?: string;
 }) => {
-  const { videos, nextPageToken } = await fetchPopularVideos(
+  const { videos, nextPageToken } = await fetchPopularVideos({
     pageToken,
-    categoryId
-  );
+    categoryId,
+  });
   const channelIds = videos.map((video: any) => video.snippet.channelId);
   const channels = await fetchChannelInfo(channelIds);
 

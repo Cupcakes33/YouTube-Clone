@@ -2,6 +2,7 @@ import {
   ChannelResponse,
   Thumbnails,
   VideoResponse,
+  VideoThumbnails,
 } from "../types/youtubeAPI";
 import axios, { AxiosInstance } from "axios";
 
@@ -21,7 +22,7 @@ export type Videos = {
   id: string;
   title: string;
   duration: string;
-  thumbnail: Thumbnails;
+  thumbnail: VideoThumbnails;
   publishedAt: string;
   viewCount: string;
   publisher: string;
@@ -51,7 +52,7 @@ export default class YoutubeInstance {
       part: "snippet, contentDetails, statistics",
       chart: "mostPopular",
       regionCode: "KR",
-      maxResults: 10,
+      maxResults: 16,
       pageToken,
       ...(categoryId && { videoCategoryId: categoryId }),
     };

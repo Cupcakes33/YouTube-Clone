@@ -4,10 +4,9 @@ type Thumbnail = {
   height: number;
 };
 
-export type Thumbnails = Record<"default" | "medium" | "high", Thumbnail> & {
-  standard?: Thumbnail;
-  maxres?: Thumbnail;
-};
+export type Thumbnails = Record<"default" | "medium" | "high", Thumbnail>;
+export type VideoThumbnails = Thumbnails &
+  Record<"standard" | "maxres", Thumbnail>;
 
 type Localized = {
   title: string;
@@ -18,7 +17,6 @@ type SnippetCommon = {
   publishedAt: string;
   title: string;
   description: string;
-  thumbnails: Thumbnails;
   defaultLanguage?: string;
   localized: Localized;
 };
@@ -28,6 +26,7 @@ type VideoResponseSnippet = SnippetCommon & {
   channelTitle: string;
   tags?: string[];
   categoryId: string;
+  thumbnails: VideoThumbnails;
   liveBroadcastContent: string;
   defaultAudioLanguage?: string;
 };
@@ -61,6 +60,7 @@ export type VideoResponse = {
 type ChannelResponseSnippet = SnippetCommon & {
   customUrl: string;
   country?: string;
+  thumbnails: Thumbnails;
 };
 
 export type ChannelResponse = {

@@ -54,8 +54,10 @@ export const getPopularVideos = async ({
     pageToken,
     categoryId,
   });
+
   const channelIds = videos.map((video: any) => video.snippet.channelId);
   const channels = await fetchChannelInfo(channelIds);
+  console.log(channels);
 
   const items = videos.map((video) => {
     const channelInfo = channels.find(

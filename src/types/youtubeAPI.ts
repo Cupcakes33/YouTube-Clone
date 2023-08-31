@@ -4,7 +4,7 @@ type Thumbnail = {
   height: number;
 };
 
-type Thumbnails = Record<"default" | "medium" | "high", Thumbnail> & {
+export type Thumbnails = Record<"default" | "medium" | "high", Thumbnail> & {
   standard?: Thumbnail;
   maxres?: Thumbnail;
 };

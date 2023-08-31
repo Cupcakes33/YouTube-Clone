@@ -1,4 +1,8 @@
-import { ChannelResponse, VideoResponse } from "../types/youtubeAPI";
+import {
+  ChannelResponse,
+  Thumbnails,
+  VideoResponse,
+} from "../types/youtubeAPI";
 import axios, { AxiosInstance } from "axios";
 
 type VideoParamsProps = {
@@ -13,7 +17,23 @@ type PopularVideos = {
 
 type ChannelInfo = ChannelResponse[];
 
-export default class Youtube {
+export type Videos = {
+  id: string;
+  title: string;
+  duration: string;
+  thumbnail: Thumbnails;
+  publishedAt: string;
+  viewCount: string;
+  publisher: string;
+  publisherProfileImg: Thumbnails;
+};
+
+export type FetchVideos = {
+  items: Videos[];
+  nextPageToken: string;
+};
+
+export default class YoutubeInstance {
   private instance: AxiosInstance;
 
   constructor() {
@@ -64,7 +84,10 @@ export default class Youtube {
     return response.data.items;
   };
 
-  fetchVideos = async ({ pageToken, categoryId }: VideoParamsProps) => {
+  fetchVideos = async ({
+    pageToken,
+    categoryId,
+  }: VideoParamsProps): Promise<FetchVideos> => {
     const { videos, nextPageToken } = await this.fetchPopularVideos({
       pageToken,
       categoryId,
@@ -80,12 +103,12 @@ export default class Youtube {
       return {
         id: video.id,
         title: video.snippet.title,
-        description: video.snippet.description,
-        thumbnails: video.snippet.thumbnails,
-        channelTitle: video.snippet.channelTitle,
+        duration: video.contentDetails.duration,
+        thumbnail: video.snippet.thumbnails,
         publishedAt: video.snippet.publishedAt,
         viewCount: video.statistics.viewCount,
-        channelThumbnail: channelInfo.snippet.thumbnails,
+        publisher: channelInfo.snippet.title,
+        publisherProfileImg: channelInfo.snippet.thumbnails,
       };
     });
 

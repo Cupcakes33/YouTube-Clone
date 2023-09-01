@@ -35,10 +35,10 @@ export type FetchVideos = {
 };
 
 export interface IYoutubeInstance {
-  fetchVideos: (params : VideoParamsProps) => Promise<FetchVideos>;
+  fetchVideos: (params: VideoParamsProps) => Promise<FetchVideos>;
 }
 
-export default class YoutubeInstance {
+export default class YoutubeInstance implements IYoutubeInstance {
   private instance: AxiosInstance;
 
   constructor() {

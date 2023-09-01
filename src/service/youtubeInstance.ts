@@ -34,6 +34,10 @@ export type FetchVideos = {
   nextPageToken: string;
 };
 
+export interface IYoutubeInstance {
+  fetchVideos: (params : VideoParamsProps) => Promise<FetchVideos>;
+}
+
 export default class YoutubeInstance {
   private instance: AxiosInstance;
 

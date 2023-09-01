@@ -1,20 +1,20 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
 import VideoItem from "../components/VideoItem";
 import { useState, useRef, useEffect } from "react";
-import { useYoutubeApi } from "../context/YoutubeApiContext";
 import { FetchVideos } from "../service/youtubeInstance";
+import useYouTubeAPI from "../hooks/useYouTubeAPI";
 
 const CATEGORYS = ["0", "10", "15", "17", "20"];
 
 export default function HomePage() {
   const [category, setCategory] = useState("0");
-  const { youtubeInstance } = useYoutubeApi();
+  const { instance } = useYouTubeAPI();
 
   const { data, fetchNextPage, hasNextPage, isLoading, isError } =
     useInfiniteQuery<FetchVideos>(
       ["videos", category],
       ({ pageParam }) =>
-        youtubeInstance.fetchVideos({
+        instance.fetchVideos({
           categoryId: category,
           pageToken: pageParam,
         }),

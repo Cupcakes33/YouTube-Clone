@@ -1,8 +1,12 @@
-import { createContext, useContext } from "react";
-import YoutubeInstance from "../service/youtubeInstance";
+import { createContext } from "react";
+import YoutubeInstance, { IYoutubeInstance } from "../service/youtubeInstance";
 
-export const YoutubeApiContext = createContext();
-const youtubeInstance = new YoutubeInstance();
+type ContextProps = {
+  instance: IYoutubeInstance;
+};
+
+export const YoutubeApiContext = createContext<ContextProps | null>(null);
+const instance = new YoutubeInstance();
 
 export function YoutubeApiProvider({
   children,
@@ -10,12 +14,8 @@ export function YoutubeApiProvider({
   children: React.ReactNode;
 }) {
   return (
-    <YoutubeApiContext.Provider value={{ youtubeInstance }}>
+    <YoutubeApiContext.Provider value={{ instance }}>
       {children}
     </YoutubeApiContext.Provider>
   );
-}
-
-export function useYoutubeApi() {
-  return useContext(YoutubeApiContext);
 }

@@ -38,8 +38,8 @@ export interface IYoutubeInstance {
   fetchVideos: (params: VideoParamsProps) => Promise<FetchVideos>;
 }
 
-export default class YoutubeInstance implements IYoutubeInstance {
-  private instance: AxiosInstance;
+class BaseYoutubeInstance {
+  protected instance: AxiosInstance;
 
   constructor() {
     this.instance = axios.create({
@@ -47,8 +47,10 @@ export default class YoutubeInstance implements IYoutubeInstance {
       params: { key: import.meta.env.VITE_YOUTUBE_API_KEY },
     });
   }
+}
 
-  private getPopularVideosParams = ({
+class ParamsInstance extends BaseYoutubeInstance {
+  protected getPopularVideosParams = ({
     categoryId,
     pageToken,
   }: VideoParamsProps) => {
@@ -62,7 +64,16 @@ export default class YoutubeInstance implements IYoutubeInstance {
     };
   };
 
-  private fetchPopularVideos = async ({
+  protected getChannelInfoParams = (channelIds: string[]) => {
+    return {
+      part: "snippet",
+      id: channelIds.join(","),
+    };
+  };
+}
+
+class MiddlewareYoutubeInstance extends ParamsInstance {
+  protected fetchPopularVideos = async ({
     categoryId,
     pageToken,
   }: VideoParamsProps): Promise<PopularVideos> => {
@@ -74,21 +85,19 @@ export default class YoutubeInstance implements IYoutubeInstance {
     };
   };
 
-  private getChannelInfoParams = (channelIds: string[]) => {
-    return {
-      part: "snippet",
-      id: channelIds.join(","),
-    };
-  };
-
-  private fetchChannelInfo = async (
+  protected fetchChannelInfo = async (
     channelIds: string[]
   ): Promise<ChannelInfo> => {
     const params = this.getChannelInfoParams(channelIds);
     const response = await this.instance.get("/channels", { params });
     return response.data.items;
   };
+}
 
+export default class YoutubeInstance
+  extends MiddlewareYoutubeInstance
+  implements IYoutubeInstance
+{
   fetchVideos = async ({
     pageToken,
     categoryId,

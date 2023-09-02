@@ -1,13 +1,13 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
 import VideoItem from "../components/VideoItem";
 import { useState, useRef, useEffect } from "react";
-import { FetchVideos } from "../service/youtubeInstance";
 import useYouTubeAPI from "../hooks/useYouTubeAPI";
+import { CategoryId, FetchVideos } from "../types/instance";
 
-const CATEGORYS = ["0", "10", "15", "17", "20"];
+const CATEGORYS: CategoryId[] = ["0", "10", "15", "17", "20"];
 
 export default function HomePage() {
-  const [category, setCategory] = useState("0");
+  const [category, setCategory] = useState<CategoryId>("0");
   const { instance } = useYouTubeAPI();
 
   const { data, fetchNextPage, hasNextPage, isLoading, isError } =
@@ -44,7 +44,6 @@ export default function HomePage() {
       observer.current.observe(loadMoreRef.current);
     }
   }, [isLoading, hasNextPage]);
-  console.log(data);
 
   return (
     <>

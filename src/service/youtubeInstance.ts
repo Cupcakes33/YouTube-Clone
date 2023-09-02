@@ -1,43 +1,11 @@
-import {
-  ChannelResponse,
-  Thumbnails,
-  VideoResponse,
-  VideoThumbnails,
-} from "../types/youtubeAPI";
 import axios, { AxiosInstance } from "axios";
-
-type VideoParamsProps = {
-  categoryId?: string;
-  pageToken?: string;
-};
-
-type PopularVideos = {
-  videos: VideoResponse[];
-  nextPageToken: string;
-};
-
-type ChannelInfo = ChannelResponse[];
-
-export type Videos = {
-  id: string;
-  title: string;
-  duration: string;
-  thumbnail: VideoThumbnails;
-  publishedAt: string;
-  viewCount: string;
-  publisher: string;
-  publisherProfileImg: Thumbnails;
-};
-
-export type FetchVideos = {
-  items: Videos[];
-  nextPageToken: string;
-};
-
-export interface IYoutubeInstance {
-  fetchVideos: (params: VideoParamsProps) => Promise<FetchVideos>;
-}
-
+import {
+  VideoParamsProps,
+  FetchVideos,
+  PopularVideos,
+  ChannelInfo,
+  IYoutubeInstance,
+} from "../types/instance";
 class BaseYoutubeInstance {
   protected instance: AxiosInstance;
 

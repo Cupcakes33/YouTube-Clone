@@ -1,5 +1,6 @@
 import { createContext } from "react";
-import YoutubeInstance, { IYoutubeInstance } from "../service/youtubeInstance";
+import YoutubeInstance from "../service/youtubeInstance";
+import { IYoutubeInstance } from "../types/instance";
 
 type ContextProps = {
   instance: IYoutubeInstance;

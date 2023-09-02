@@ -7,7 +7,7 @@ const DUMMY_USER_PROFILE_IMAGE_URL =
 
 export default function Header() {
   return (
-    <header className="w-full h-[56px] px-4 flex flex-row items-center justify-between border-b">
+    <header className="w-full h-[56px] px-4 flex flex-row items-center justify-between fixed z-50 bg-white">
       {/* Logo */}
       <a
         className="relative flex flex-row items-center gap-1 cursor-pointer"
@@ -19,10 +19,10 @@ export default function Header() {
           KR
         </span>
       </a>
-      
+
       {/* Search Input */}
       <SearchInput />
-      
+
       {/* User Menu */}
       <div>
         <img
